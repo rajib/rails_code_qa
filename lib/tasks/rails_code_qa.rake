@@ -23,7 +23,7 @@ namespace :rcqa do
       puts "#################################################"
       Rake::Task["rcqa:#{section_name}"].invoke
       unless section[:folders].nil?
-        puts "HTML output: <file:///#{File.join([Rails.root, 'coverage', section_name, 'index.html'])}>"
+        puts "HTML output: <http://yourserver.com/#{File.join(['public', 'coverage', section_name, 'index.html'])}>"
       end
       puts "\n\n"
     end
